@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher López Aviña - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a9d8f;
+            --secondary-color: #264653;
+            --background-color: #f4a261;
+            --text-color: #e76f51;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefae0;
+            color: var(--secondary-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: white;
+            border: 1px solid var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .photo {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+        }
+
+        section {
+            padding: 1.5rem;
+            border-top: 1px solid var(--secondary-color);
+        }
+
+        h2 {
+            color: var(--text-color);
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+        }
+
+        .skills, .software, .languages {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .skills div, .software div, .languages div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .progress-bar {
+            background-color: var(--background-color);
+            height: 10px;
+            width: 70%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Christopher López Aviña</h1>
+    </header>
+
+    <div class="container">
+        <!-- Photo Section -->
+        <div class="photo">
+            <img src="fotocv.jpg" alt="Photo of Christopher">
+        </div>
+
+        <!-- Contact Information -->
+        <section>
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Phone:</strong> 332-182-4992</li>
+                <li><strong>Email:</strong> chris.slap13@gmail.com</li>
+                <li><strong>Age:</strong> 23</li>
+                <li><strong>Nationality:</strong> Mexican</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor's Degree:</strong> General High School - Preparatoria no. 13, UdeG</li>
+                <li><strong>Currently Studying:</strong> 6th Semester in Computer Engineering - CUCEI</li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <span>Problem Solving</span>
+                    <div class="progress-bar"><span style="width: 80%;"></span></div>
+                </div>
+                <div>
+                    <span>Teamwork</span>
+                    <div class="progress-bar"><span style="width: 75%;"></span></div>
+                </div>
+                <div>
+                    <span>Programming</span>
+                    <div class="progress-bar"><span style="width: 85%;"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section>
+            <h2>Work Experience</h2>
+            <p>No formal work experience yet, but eager to contribute to challenging projects and teams.</p>
+        </section>
+
+        <!-- Project Experience -->
+        <section>
+            <h2>Project Experience</h2>
+            <ul>
+                <li>Developed a student management system for school administration.</li>
+                <li>Created a basic portfolio website using HTML, CSS, and JavaScript.</li>
+            </ul>
+        </section>
+
+        <!-- Professional Interests -->
+        <section>
+            <h2>Professional Interests</h2>
+            <p>Software Development, Artificial Intelligence, and Cybersecurity.</p>
+        </section>
+
+        <!-- Software Knowledge -->
+        <section>
+            <h2>Software Knowledge</h2>
+            <div class="software">
+                <div>
+                    <span>Python</span>
+                    <div class="progress-bar"><span style="width: 85%;"></span></div>
+                </div>
+                <div>
+                    <span>HTML & CSS</span>
+                    <div class="progress-bar"><span style="width: 90%;"></span></div>
+                </div>
+                <div>
+                    <span>JavaScript</span>
+                    <div class="progress-bar"><span style="width: 75%;"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section>
+            <h2>Languages</h2>
+            <div class="languages">
+                <div>
+                    <span>Spanish</span>
+                    <div class="progress-bar"><span style="width: 100%;"></span></div>
+                </div>
+                <div>
+                    <span>English</span>
+                    <div class="progress-bar"><span style="width: 80%;"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section>
+            <h2>References</h2>
+            <ul>
+                <li><strong>Dr. María González:</strong> Professor at CUCEI - maria.gonzalez@cucei.udg.mx</li>
+                <li><strong>Mr. Juan Pérez:</strong> Family Friend - juan.perez@gmail.com</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Christopher López Aviña. All rights reserved.</p>
+    </footer>
+</body>
+</html>
